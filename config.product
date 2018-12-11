@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="plugEditor" uid="plugEditor" id="plugEditor.product" application="org.eclipse.equinox.p2.publisher.CategoryPublisher" version="1" useFeatures="false" includeLaunchers="true">
+
+   <plugins>
+   </plugins>
+
+
+</product>

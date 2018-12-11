@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="PL-1 Editor"
+            extensions="flex"
+            icon="icons/mv16.png"
+            contributorClass="plugeditor.editors.PLEditorContributor"
+            class="plugeditor.editors.PLEditor"
+            id="plugeditor.editors.PL1Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            name="PL1_Editor"
+            id="plugEditor">
+      </category>
+      <wizard
+            name="PL1_Editor"
+            icon="icons/mv16.png"
+            category="plugEditor"
+            class="plugeditor.wizards.SampleNewWizard"
+            id="plugeditor.wizards.SampleNewWizard">
+      </wizard>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.equinox.p2.publisher.CategoryPublisher"
+            name="plugEditor">
+         <property
+               name="appName"
+               value="plugEditor">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
